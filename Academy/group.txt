@@ -1,0 +1,5 @@
+Academy.Student:Pinkman|Jessie|25|Chemistry|WW_220|90|99
+Academy.Teacher:White|Walter|50|Chemistry|25
+Academy.Graduate:Hank|Schrader|40|Criminalistic|OBN|80|70|"How to cath Heisenberg"
+Academy.Student:Vercetty|Tommy|30|Theft|Vice|90|99
+Academy.Teacher:Diaz|Ricardo|50|"Weapons distribution"|25
