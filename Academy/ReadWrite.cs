@@ -25,11 +25,22 @@ namespace Academy
 
 		public void Write()
 		{
-			using (StreamWriter streamW = new StreamWriter(path, false))
+			//.  - Ссылка на текущий каталог
+			//.. - ссылка на родитльский катало
+
+			Directory.SetCurrentDirectory("..\\.."); // Задание нового каталога для записи в файл.
+			string currentDirectory = Directory.GetCurrentDirectory(); // Читает текущий каталог для записи файли.
+			Console.WriteLine(currentDirectory);
+
+			using (StreamWriter streamW = new StreamWriter(path, true))
 			{
 				for (int i = 0; i < human.Length; i++)
 					streamW.WriteLine(human[i].WriteToFile());
 				Console.WriteLine("File saved!");
+
+				//Часть кода для автоматического открытия файла
+				string cmd = $"{currentDirectory}\\{path}";
+				System.Diagnostics.Process.Start("notepad", cmd);
 			}
 		}
 		public Human[] Read()
