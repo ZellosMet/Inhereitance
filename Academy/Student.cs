@@ -53,5 +53,9 @@ namespace Academy
 			Console.WriteLine("Rating:\t\t" + Rating);
 			Console.WriteLine("Attendance:\t" + Attendance);
 		}
+		public override string WriteToFile()
+		{
+			return base.WriteToFile() + $"|{Speciality}|{Group}|{Rating}|{Attendance}";
+		}
 	}
 }

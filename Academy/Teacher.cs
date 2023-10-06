@@ -39,5 +39,9 @@ namespace Academy
 			Console.WriteLine("Speciality:\t" + Speciality);
 			Console.WriteLine("Experience:\t" + Experience);
 		}
+		public override string WriteToFile()
+		{
+			return base.WriteToFile() + $"|{Speciality}|{Experience}";
+		}
 	}
 }

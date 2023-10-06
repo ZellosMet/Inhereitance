@@ -42,5 +42,9 @@ namespace Academy
 			Console.WriteLine("Age name:\t" + Age);
 			//Console.WriteLine($"{LastName} {FirstName} {Age}");
 		}
+		public virtual string WriteToFile()
+		{
+			return $"{this.GetType()}:{LastName}|{FirstName}|{Age}";
+		}
 	}
 }

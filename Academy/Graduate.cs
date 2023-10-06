@@ -35,5 +35,9 @@ namespace Academy
 			base.Print();
 			Console.WriteLine("ThesisTopic:\t" + ThesisTopic);
 		}
+		public override string WriteToFile()
+		{
+			return base.WriteToFile() + $"|{ThesisTopic}";
+		}
 	}
 }

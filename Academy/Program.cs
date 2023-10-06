@@ -11,6 +11,8 @@ namespace Academy
 		public static readonly string delim = "\n----------------------------------------------------\n";
 		static void Main(string[] args)
 		{
+			string file_name = "group.txt";
+
 			Human human = new Human("Montana", "Antonio", 30);
 			//Console.WriteLine(human);
 			//Console.WriteLine(delim);
@@ -38,21 +40,32 @@ namespace Academy
 
 			Human[] group = new Human[]
 			{
-				student, teacher, graduate, tommy, 
-				new Teacher("Diaz", "Ricardo", 50, "Weapons distribution", 25) 
+				student, teacher, graduate, tommy,
+				new Teacher("Diaz", "Ricardo", 50, "\"Weapons distribution\"", 25)
 			};
 
+
 			for (int i = 0; i < group.Length; i++)
-			{ 
-			
+			{
+
 				//Console.WriteLine(group[i]);
 				group[i].Print();
 				Console.WriteLine(delim);
 			}
+
+			ReadWrite w = new ReadWrite(group, file_name);
+			w.Write();
+			ReadWrite r = new ReadWrite(file_name);
 			Console.WriteLine(delim);
 
-			foreach(Human i in group)
-				Console.WriteLine(i);			
+			Human[] load_group = r.Read();
+			Console.WriteLine(delim);
+
+			for (int i = 0; i < load_group.Length; i++)
+			{
+				load_group[i].Print();
+				Console.WriteLine(delim);
+			}
 		}
 	}
 }
