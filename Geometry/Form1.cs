@@ -9,11 +9,18 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices; //Позволяет подключать DLL-файлы
 
 namespace Geometry
 {
 	public partial class Geometry : Form
 	{
+		//Получаем hwnd консоли
+		[DllImport("kernel32.dll")]
+		public static extern IntPtr GetConcoleWindow(); 
+		[DllImport("kernel32.dll")]
+		public static extern IntPtr GetDC(IntPtr hwnd);
+
 		Graphics shape;
 		public Geometry()
 		{
