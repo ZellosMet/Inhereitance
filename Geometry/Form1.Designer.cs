@@ -1,6 +1,6 @@
 ﻿namespace Geometry
 {
-	partial class Form1
+	partial class Geometry
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -81,7 +81,7 @@
 			this.label1.AutoSize = true;
 			this.label1.Location = new System.Drawing.Point(80, 310);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(0, 18);
+			this.label1.Size = new System.Drawing.Size(92, 16);
 			this.label1.TabIndex = 4;
 			this.label1.Text = "Информация";
 			// 
@@ -153,7 +153,7 @@
 			this.label8.Size = new System.Drawing.Size(0, 16);
 			this.label8.TabIndex = 12;
 			// 
-			// Form1
+			// Geometry
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -171,8 +171,8 @@
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.comboBox1);
 			this.Controls.Add(this.textBox2);
-			this.Name = "Form1";
-			this.Text = "Form1";
+			this.Name = "Geometry";
+			this.Text = "Geometry";
 			this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
 			this.ResumeLayout(false);
 			this.PerformLayout();

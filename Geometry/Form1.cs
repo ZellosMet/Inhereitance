@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace Geometry
 {
-	public partial class Form1 : Form
+	public partial class Geometry : Form
 	{
 		Graphics shape;
-		public Form1()
+		public Geometry()
 		{
 			InitializeComponent();
 			comboBox1.Items.AddRange(new string[] { "Квадрат", "Прямоугольник", "Круг", "Треугольник" });
