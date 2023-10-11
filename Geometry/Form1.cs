@@ -34,6 +34,7 @@ namespace Geometry
 		private void Form1_Paint(object sender, PaintEventArgs e)
 		{ 
 			shape = CreateGraphics();
+			shape.DrawRectangle(Pens.Black, 395, 240, 1, 1);
 			shape.DrawRectangle(Pens.Black, 200, 10, 390, 460);
 			shape.DrawRectangle(Pens.Black, 12, 240, 170, 230);
 		}

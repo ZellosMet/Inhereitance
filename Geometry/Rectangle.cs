@@ -30,7 +30,7 @@ namespace Geometry
 		}
 		public override void GetDraw()
 		{
-			shape.FillRectangle(brush, START_X, START_Y, (side1 > MAX_SIDE1 ? MAX_SIDE1 : side1), (side2 > MAX_SIDE2 ? MAX_SIDE2 : side2));
+			shape.FillRectangle(brush, CENTER_X - (side1 > MAX_SIDE1 ? MAX_SIDE1 : side1) / 2, CENTER_Y - (side2 > MAX_SIDE2 ? MAX_SIDE2 : side2) / 2, (side1 > MAX_SIDE1 ? MAX_SIDE1 : side1), (side2 > MAX_SIDE2 ? MAX_SIDE2 : side2));
 		}
 		public override string Info()
 		{

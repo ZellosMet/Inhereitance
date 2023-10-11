@@ -29,7 +29,7 @@ namespace Geometry
 		}
 		public override void GetDraw()
 		{
-			shape.FillEllipse(brush, START_X, START_Y+30, (diameter > MAX_DIAMETER ? MAX_DIAMETER : diameter), (diameter > MAX_DIAMETER ? MAX_DIAMETER : diameter));
+			shape.FillEllipse(brush, CENTER_X - (diameter > MAX_DIAMETER ? MAX_DIAMETER : diameter) / 2, CENTER_Y - (diameter > MAX_DIAMETER ? MAX_DIAMETER : diameter) / 2, (diameter > MAX_DIAMETER ? MAX_DIAMETER : diameter), (diameter > MAX_DIAMETER ? MAX_DIAMETER : diameter));
 		}
 		public override string Info()
 		{

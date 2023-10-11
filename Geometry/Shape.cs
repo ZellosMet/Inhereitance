@@ -10,8 +10,8 @@ namespace Geometry
 {
 	abstract class Shape
 	{
-		protected static readonly int START_X = 210;
-		protected static readonly int START_Y = 20;
+		protected static readonly int CENTER_X = 395;
+		protected static readonly int CENTER_Y = 240;
 		protected Color color;
 		protected Graphics shape;
 		protected SolidBrush brush;

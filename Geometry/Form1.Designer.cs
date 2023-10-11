@@ -171,6 +171,7 @@
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.comboBox1);
 			this.Controls.Add(this.textBox2);
+			this.MaximizeBox = false;
 			this.Name = "Geometry";
 			this.Text = "Geometry";
 			this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
