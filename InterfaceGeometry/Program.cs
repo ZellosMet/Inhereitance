@@ -25,6 +25,10 @@ namespace InterfaceGeometry
 
 			Rectangle rect = new Rectangle(200, 150, 100, 100, 5, Color.AliceBlue);
 			rect.Info(e);
+
+			Square square = new Square(120, 400, 100, 3, Color.Red);
+			square.Info(e);
+			square.DrawDiagonal(e);
 		}
 		[DllImport("kernel32.dll")]
 		public static extern IntPtr GetConsoleWindow();
